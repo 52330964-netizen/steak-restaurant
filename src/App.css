@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+nav ul {
+    display:flex;
+    margin-top: 50px;
+    margin-left:40px;
+    padding: 10px;
+}
+nav ul li a{
+    padding : 20px 20px;
+    color: black;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid #d4af37;
+}
+header{
+    height: 800px;
+    background: url('/images/freshly-cut-meat.jpg') center center/cover no-repeat ;
+    position: relative;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:left;
+    height: 600px;
+    padding-left: 80px;
+}
+header .content h1{
+    font-size: 60px;
+    color: ivory;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 45px;
+}
+header .content h2{
+    font-size:50px;
+    color: #d4af37;
+    margin-left: 25px;
+}
+header .content p{
+    margin: 25px 39px;
+    color: ivory;
+    font-size:20px;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.6);
+
+}
+header *{
+    z-index: 8;
+}
+.btn{
+    display:inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary{
+    color:white;
+    border: 1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-left: 220px;
+}
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #d4af37;
+}
+.container{
+  
+    max-width: 1500px;
+    margin: auto;
+}
+#about{
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#f4f4f4;
+}
+#about .title,
+#menu .title,
+#dessert .title,
+#drinks .title
+{
+    text-align: center;
+    margin-bottom: 4em;
+}
+#about h2,
+#menu h2
+{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom:20px;
+
+}
+#about .title p,
+#menu .title p,
+#dessert .title p,
+#drinks .title p
+{
+    font-size: 30px;
+    color: #d4af37;
+    font-weight: 1000;
+    margin-top: 10px;
+
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 27px;
+}
+#about .about-content img{
+    width: 450px;
+    height: 400px;
+    margin-left: 100px;
+}
+#about .about-content p{
+    color: #9a9a9a;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.btn-secondary{
+    color: white;
+    background: #383848;
+    margin-top: 2rem;
+}
+#menu{
+    background: white;
+    padding: 80px 40px;
+    
+}
+#menu .menu-items{
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 80px;
+}
+#menu .menu-items-left,
+#menu .menu-items-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#menu .menu-items .menu-item{
+    display: flex;
+    align-items: flex-start;
+    
+}
+#menu .menu-items .menu-item img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 80px;
+}
+#menu .menu-items .menu-item h3  {
+    color: #383848;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    gap: 50px;
+    display: flex;
+    margin: 0 15;
+}
+#menu .menu-items .menu-item span {
+    font-weight: bold;
+    margin-left: auto;
+    white-space: nowrap;
+}
+#dessert{
+    background: white;
+    padding: 80px 40px;
+    
+}
+#dessert .dessert-items{
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 80px;
+}
+#dessert .dessert-items-left,
+#dessert .dessert-items-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 60px;
+}
+#dessert .dessert-items .dessert-item{
+    display: flex;
+    align-items: flex-start;
+    
+}
+#dessert .dessert-items .dessert-item img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 80px;
+}
+#dessert .dessert-items .dessert-item h3  {
+    color: #383848;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    gap: 50px;
+    
+}
+#dessert .dessert-items .dessert-item span {
+    margin-left: auto;
+    white-space: nowrap;
+   font-weight: bold;
+}
+#drinks{
+    background: white;
+    padding: 80px 40px;
+}
+#drinks .drink-items{
+    display:flex;
+    gap: 40px;
+}
+#drinks .drink-items-left,
+#drinks .drink-items-right{
+    width: 50%;
+    margin-left: 30px;
+}
+#drinks .drink-items .drink-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#drinks .drink-items .drink-item img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 80px;
+}
+#drinks .drink-items .drink-item h3  {
+    color: #383848;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    font-size: 18px;
+    width: 500px;
+    padding-right: 10px;
+    gap: 50px;
+}
+#drinks .drink-items .drink-item span {
+    
+  font-weight: bold;
+    white-space: nowrap; 
+    margin-left: auto;
+}
+#daytime {
+    background: url("") center center/cover fixed no-repeat;
+    color: #0a0a07;
+    text-align: center;
+    background-color: #d6b23dac;
+}
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+#daytime .daytime-items p{
+    font-weight: 500;
+}
+#contact {
+    padding: 80px 0;
+    background:#f4f4f4;
+}
+#contact .container {
+    max-width: 900px;
+}
+#contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info {
+    width: 50%;
+}
+#contact .contact-content .contact-info div {
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#contact .contact-content .contact-info h3 {
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+#contact .contact-content .contact-info p {
+    color: #9a9a9a;
+}
+#contact .contact-content .contact-info i {
+    color: #d4af37;
+    margin-right: 5px;
+}
+#contact .contact-content .contact-info a i {
+    color: white;
+    background-color: #383848;
+    padding: 28px;
+    border-radius: 50%;
+    font-size: 15px;
+    width: 80px;
+}
+#contact .contact-content .contact-info a i:hover {
+    background: #d4af37;
+    color: #383848;
+}
+form {
+    width: 50%;
+}
+form input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color:#e3e2dd;
+}
+#contact .btn {
+    background: #d4af37;
+    color: white;
+    cursor: pointer;
+}
+#contact .btn:hover {
+    background-color: #383848;
+}
+#footer {
+    background: #383848;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
+#footer a {
+    color: white;
+}
+#book-toggle{
+    display: none;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    background: white;
+    padding: 40px;
+    width: 700px;
+    max-width: 90%;
+    border-radius: 12px;
+    position: relative;
+    align-items: center;
+}
+#book-toggle:checked ~ .modal{
+    display: flex;
+}
+.modal-content button{
+    background: #c59d5f;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto 0;
+    margin-top: 25px;
+    border-radius: 6px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
