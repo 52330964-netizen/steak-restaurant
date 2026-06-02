@@ -501,22 +501,7 @@ textarea {
     #about .about-content p {
         font-size: 18px;
     }
-
-    /* MENU + DESSERT */
-    #menu .menu-items,
-    #dessert .dessert-items {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    #menu .menu-items-left,
-    #menu .menu-items-right,
-    #dessert .dessert-items-left,
-    #dessert .dessert-items-right {
-        margin-left: 0;
-    }
-
-    #menu .menu-items .menu-item,
+ #menu .menu-items .menu-item,
     #dessert .dessert-items .dessert-item,
     #drinks .drink-items .drink-item {
         flex-direction: column;
@@ -528,19 +513,17 @@ textarea {
     #drinks .drink-items .drink-item h3 {
         width: 100%;
         gap: 10px;
-        font-size: 15px;
+        font-size: 16px;
         margin-top: 10px;
     }
 
-    #menu img,
-    #dessert img,
-    #drinks img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
+    #menu .menu-items-left,
+    #menu .menu-items-right,
+    #dessert .dessert-items-left,
+    #dessert .dessert-items-right {
+        margin-left: 0;
     }
-
+    
     /* DRINKS */
     #drinks .drink-items {
         flex-direction: column;
