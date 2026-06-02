@@ -426,29 +426,93 @@ textarea {
 }
 @media (max-width: 768px) {
 
-   
-
-    
-
-    input::placeholder,
-    textarea::placeholder {
-        color: #888;
+    /* NAV */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0;
     }
 
-    /* أضيفي هذا الجزء هنا */
+    nav ul {
+        margin: 10px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    /* HOME */
+    header {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
 
     header .content {
-        padding-left: 0;
+        height: 100%;
+        padding: 20px;
+        text-align: center;
         align-items: center;
+        justify-content: center;
     }
 
-    header .content h1,
-    header .content h2,
+    header .content h1 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    header .content h2 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
     header .content p {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    .btn-primary {
         margin-left: 0;
     }
 
+    /* ABOUT */
+    #about {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    #about .about-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
     #about .about-content img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #about .about-content p {
+        font-size: 18px;
+    }
+
+    /* MENU + DESSERT */
+    #menu .menu-items,
+    #dessert .dessert-items {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #menu .menu-items-left,
+    #menu .menu-items-right,
+    #dessert .dessert-items-left,
+    #dessert .dessert-items-right {
         margin-left: 0;
     }
 
@@ -464,19 +528,68 @@ textarea {
     #drinks .drink-items .drink-item h3 {
         width: 100%;
         gap: 10px;
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 10px;
     }
 
-    #menu .menu-items-left,
-    #menu .menu-items-right,
-    #dessert .dessert-items-left,
-    #dessert .dessert-items-right {
+    #menu img,
+    #dessert img,
+    #drinks img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* DRINKS */
+    #drinks .drink-items {
+        flex-direction: column;
+    }
+
+    #drinks .drink-items-left,
+    #drinks .drink-items-right {
+        width: 100%;
         margin-left: 0;
+    }
+
+    /* DAYTIME */
+    #daytime {
+        width: 100%;
+    }
+
+    #daytime .daytime-items {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    /* CONTACT */
+    #contact {
+        padding: 40px 15px;
+    }
+
+    #contact .container {
+        width: 100%;
+    }
+
+    #contact .contact-content {
+        flex-direction: column;
+    }
+
+    #contact .contact-content .contact-info,
+    form {
+        width: 100%;
     }
 
     #contact .contact-content .contact-info {
         margin-bottom: 30px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 15px;
     }
 
     #contact .contact-content .contact-info a i {
@@ -484,4 +597,15 @@ textarea {
         padding: 20px;
     }
 
+    /* DATE & TIME */
+    input[type="date"],
+    input[type="time"] {
+        color: #888;
+    }
+
+    /* PLACEHOLDER */
+    input::placeholder,
+    textarea::placeholder {
+        color: #888;
+    }
 }
