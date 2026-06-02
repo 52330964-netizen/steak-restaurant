@@ -520,20 +520,15 @@ textarea {
     #menu .menu-items-left,
     #menu .menu-items-right,
     #dessert .dessert-items-left,
-    #dessert .dessert-items-right {
+    #dessert .dessert-items-right,
+    #drink .drink-items-left,
+    #drink .drink-items-right {
+ 
         margin-left: 0;
     }
     
     /* DRINKS */
-    #drinks .drink-items {
-        flex-direction: column;
-    }
-
-    #drinks .drink-items-left,
-    #drinks .drink-items-right {
-        width: 100%;
-        margin-left: 0;
-    }
+    
 
     /* DAYTIME */
     #daytime {
