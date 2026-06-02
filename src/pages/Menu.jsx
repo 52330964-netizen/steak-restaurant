@@ -5,7 +5,7 @@ function Menu() {
     <>
       <Navbar />
 
-      {/* MENU */}
+      {}
       <section id="menu">
         <div className="container">
           <div className="title">
@@ -85,7 +85,7 @@ function Menu() {
         </div>
       </section>
 
-      {/* DESSERT */}
+      {}
       <section id="dessert">
         <div className="container">
           <div className="title">
@@ -140,7 +140,7 @@ function Menu() {
         </div>
       </section>
 
-      {/* DRINKS */}
+      {}
       <section id="drinks">
         <div className="container">
           <div className="title">
@@ -195,7 +195,7 @@ function Menu() {
         </div>
       </section>
 
-      {/* DAYTIME */}
+      {}
       <section id="daytime">
         <div className="container">
           <div className="daytime-items">
